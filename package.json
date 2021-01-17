@@ -20,6 +20,7 @@
     "export": "^0.1.337",
     "html-react-parser": "^0.13.0",
     "http-proxy-middleware": "^1.0.5",
+    "jimp": "^0.16.1",
     "jquery": "^3.5.1",
     "js-cookie": "^2.2.1",
     "jwt-decode": "^3.0.0-beta.2",

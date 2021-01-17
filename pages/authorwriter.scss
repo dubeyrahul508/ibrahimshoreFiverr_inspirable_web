@@ -1,0 +1,445 @@
+@import "../theme/theme";
+
+
+.benefits-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.container-title-author{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    margin-top: 30px;
+
+    .title{
+        color: $primary-dark;
+        padding-bottom: 8px;
+        text-align: center;
+        font-size: 26px;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+
+    span:after{
+        content: '.';
+        display: block;
+        height: 1px;
+        width: 100px;
+        margin: 0px auto;
+        text-indent: -9999px;
+        border-top: 3px solid $primary-dark;
+    }
+}
+
+.Carousel-root-1{
+  text-align: center;
+  color: $primary-dark;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.MuiPaper-root{
+  text-align: center;
+  color: $primary-dark;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  p{
+    max-width: 860px;
+  }
+
+  .photo{
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    -moz-border-radius: 35px;
+    -webkit-border-radius: 35px;
+    border: 0px none #000000;
+  }
+
+}
+
+.MuiPaper-elevation1{
+  box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0), 0px 0px 0px 0px rgba(0,0,0,0.0), 0px 0px 0px 0px rgba(0,0,0,0.0) !important;
+}
+
+
+
+
+.container-author{
+  display: flex;
+  justify-content: flex-end;
+
+  background-color: $primary;
+  padding-bottom: 100px;
+  padding-top: 60px;
+
+  overflow:hidden;
+
+  height: 700px;
+
+
+
+
+
+    .experiencesContainer{
+      //max-width: 1060px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      flex-direction: row-reverse;
+
+      .experiencesImageContainer{
+
+        height: 515px;
+        max-width: 1100px;
+
+        position: relative;
+        z-index: 3;
+        left: 10px;
+        img{
+          width: 750px;
+        }
+      }
+
+      .experiencesInfoContainer{
+        background-color: #FFF;
+        height: 400px;
+        max-width: 705px;
+        padding: 20px 80px 20px 80px;
+        position: relative;
+        left: 70px;
+        z-index: 5;
+
+        .experiencesText{
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+          max-width: 700px;
+          .signUp-button{
+            background-color: #344e5f;
+            border: none;
+            padding: 16px 45px;
+            -webkit-text-decoration: none;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 26px;
+            color: white;
+            margin: 3px;
+            cursor: pointer;
+          }
+          .bigInfo{
+            font-size: xx-large;
+          }
+
+
+        strong{
+          font-weight: 900;
+        }
+
+
+        }
+
+
+      }
+    }
+
+
+}
+
+.carouselContainer{
+  background-color: $primary;
+  *{
+    background-color: $primary !important;
+  }
+}
+
+.paragraph{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: x-large;
+  font-weight: bold;
+
+  align-items: center;
+  flex-direction: column;
+
+  p{
+    color:#2A2A52;
+  }
+
+  span{
+    color: red;
+  }
+
+
+  .asks-image-content{
+    display: flex;
+    flex-direction: column;
+  .paragraphVideo{
+    max-width: 860px;
+
+    img{
+      width: 95%;
+    }
+
+  }
+
+
+  .asks-section{
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: justify;
+    justify-content: center;
+    max-width: 860px;
+    width: 95%;
+    padding-left: 1em;
+    span{
+      font-size: 1rem;
+      color: #6E6E6E;
+    }
+    p{
+      font-size: 1rem;
+      color: #6E6E6E;
+      padding-bottom: 2em;
+    }
+    li{
+      color: #334D5E;
+      font-size:22px;
+    }
+  }
+}
+}
+
+.paragraphContent{
+  max-width: 860px;
+
+}
+
+
+
+
+
+@media only screen and (max-width: 1455px) {
+
+  .container-author{
+    height: 650px;
+
+      .experiencesContainer{
+        .experiencesImageContainer{
+          height: 415px;
+          max-width: 680px;
+          img{
+            width: 600px;
+          }
+        }
+        .experiencesInfoContainer{
+          height: 360px;
+          max-width: 605px;
+          .experiencesText{
+             max-width: 700px;
+           }
+        }
+       }
+      }
+    }
+
+
+    @media only screen and (max-width: 1209px) {
+
+      .container-author{
+        height: 600px;
+
+          .experiencesContainer{
+            .experiencesImageContainer{
+              height: 350px;
+              max-width: 640px;
+              img{
+                width: 460px;
+              }
+            }
+            .experiencesInfoContainer{
+              height: 300px;
+              max-width: 510px;
+              .experiencesText{
+                 max-width: 620px;
+                 .bigInfo{
+                  font-size: 1.3rem;
+                }
+               }
+            }
+           }
+          }
+        }
+
+        @media only screen and (max-width: 969px) {
+          .container-author{
+            height: 900px;
+
+              .experiencesContainer{
+                align-items: center;
+
+                .experiencesImageContainer{
+                  height: 250px;
+                  max-width: 510px;
+                  img{
+                    max-width: 450px;
+                  }
+                }
+                .experiencesInfoContainer{
+                  height: 300px;
+                  max-width: 400px;
+                  left: 0;
+                  .experiencesText{
+                     max-width: 350px;
+                     justify-content: center;
+                     align-items: center;
+                     text-align: center;
+                     p{
+                       font-size: 14px;
+                     }
+                     .bigInfo{
+                      font-size: 1.1rem;
+                    }
+                   }
+                }
+               }
+              }
+
+        }
+
+
+        @media only screen and (max-width: 600px) {
+          .container-author{
+            height: 700px;
+            padding-top: 0;
+
+              .experiencesContainer{
+                align-items: center;
+
+                .experiencesImageContainer{
+                  height: 250px;
+                  max-width: 430px;
+                  left: 0;
+                  img{
+                    max-width: 350px;
+                  }
+                }
+                .experiencesInfoContainer{
+                  height: 300px;
+                  max-width: 355px;
+                  left: 0;
+                  .experiencesText{
+                     max-width: 350px;
+                     justify-content: center;
+                     align-items: center;
+                     text-align: center;
+                     .signUp-button{
+
+                      padding: 16px 45px;
+
+                      font-size: 14px;
+
+                      margin: 3px;
+                      cursor: pointer;
+                     }
+                     p{
+                       font-size: 11px;
+                     }
+                     .bigInfo{
+                      font-size: 1rem;
+                    }
+                   }
+                }
+               }
+              }
+
+        }
+
+
+        @media only screen and (max-width: 400px) {
+
+          .container-author{
+            height: 700px;
+            padding-top: 0;
+
+              .experiencesContainer{
+                align-items: center;
+
+                .experiencesImageContainer{
+                  height: 250px;
+                  max-width: 320px;
+                  left: 0;
+                  img{
+                    max-width: 260px;
+                  }
+                }
+                .experiencesInfoContainer{
+                  height: 300px;
+                  max-width: 260px;
+                  left: 0;
+                  .experiencesText{
+                     max-width: 330px;
+                     justify-content: center;
+                     align-items: center;
+                     text-align: center;
+                     .signUp-button{
+                      font-size: 12px;
+                      margin: 2px;
+                     }
+                     p{
+                       font-size: 10px;
+                     }
+                     .bigInfo{
+                      font-size: 12px;
+                    }
+                   }
+                }
+               }
+              }
+
+        }
+
+        .upper-triangle{
+          clip-path: polygon(81% 0, 0% 100%, 100% 100%);
+          background:#E8FCFF;
+          height:100px;
+          margin-top:45px;
+        }
+        .lower-triangle{
+          clip-path: polygon(19% 100%, 0 0, 100% 0);
+          background:#E8FCFF;
+          height:100px;
+          margin-bottom:45px;
+        }
+
+        @media only screen and (min-width: 320px) and (max-width: 767px){
+          .upper-triangle{
+            clip-path: polygon(81% 0, 0% 100%, 100% 100%);
+            background:#E8FCFF;
+            height:50px;
+            margin-top:40px;
+          }
+          .lower-triangle{
+            clip-path: polygon(19% 100%, 0 0, 100% 0);
+            background:#E8FCFF;
+            height:50px;
+            margin-bottom:40px;
+          }
+
+        }

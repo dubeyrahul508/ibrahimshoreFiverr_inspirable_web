@@ -1,0 +1,120 @@
+@import "../theme/theme";
+
+
+.subscribe {
+    position: relative;
+    flex-direction: column;
+    height: 400px;
+    width: 100%;
+    background: #F2F9FB;
+    align-items: center;
+    display: flex;
+    color: #334D5E;
+    font-weight: bold;
+    
+      h2{
+        font-size: 1.8em;
+      }
+
+
+    .backTopLeft {
+
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      align-self: self-start;
+
+      img{
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+      }
+    }
+
+
+    .backBottomRight {
+
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      bottom:0;
+      right:0;
+      img{
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+      }
+    }
+
+    .subscribeForm{
+      text-align: center;
+      margin: 0 auto;
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+
+      p {
+        color: #2C2D36;
+      }
+
+      input[type="text"]{
+        margin-left: 5px;
+        margin-right: 5px;
+        height: 40px;
+        border: 0px solid #000000;
+        -moz-border-radius: 20px;
+        -webkit-border-radius:20px;
+        background: #F2F9FB;
+        padding-left: 16px;
+        padding-right: 16px;
+        font-family: $general-font;
+        border: 2px solid #e0e0e0;
+        background-color: white;
+        margin-top: 15px;
+
+      }
+      input[type="submit"]{
+        margin-left: 5px;
+        margin-right: 5px;
+        height: 40px;
+        border: 0px solid #000000;
+        -moz-border-radius: 20px;
+        -webkit-border-radius:20px;
+        padding-left: 16px;
+        padding-right: 16px;
+        margin-top: 15px;
+        background: #334D5E;
+        color: #fff;
+      }
+      #email{
+        width: 250px;
+      }
+
+      .error-content{
+        display: flex;
+        flex-direction: column;
+      }
+    
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+   .backTopLeft{
+      display: none;
+   }
+
+   .backBottomRight{
+      display: none;
+   }
+
+
+}
+
+@media (min-width: 1600px) {
+  .subscribeForm {
+    font-size: 1.2rem;
+  }
+}

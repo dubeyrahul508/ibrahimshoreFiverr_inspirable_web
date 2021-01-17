@@ -1,0 +1,31 @@
+.navBar{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    padding-left: 10px ;
+    > span {
+        font-weight: normal;
+    }
+}
+
+
+@media only screen and (max-width: 992px) {
+
+    .navBar{
+        flex-direction: column;
+        padding-right: 10px ;
+        width: inherit;
+        span{
+            width: inherit;
+        }
+    }
+
+}
+
+@media (min-width: 1600px) {
+    .navBar {
+        span {
+            font-size: 1.5rem;
+        }
+    }
+}

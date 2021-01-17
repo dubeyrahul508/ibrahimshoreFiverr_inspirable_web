@@ -1,0 +1,289 @@
+.Featuresbackground {
+    background-image: url(/images/girlOver.png);
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+
+    .overlayBackground {
+        /* width: 100%;
+        height: 80vh;
+        background-color: rgba(0, 0, 0, 0.2);
+        margin-top: -4%; */
+        
+        h1 {
+            color: white;
+            font-size: 4em !important;
+            padding-top: 10%;
+            padding-left: 10%;
+        }
+    }
+}
+
+.coverImageContainer {
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
+    background-position: center;
+}
+
+.ourFeatures {
+    max-width: 100% !important;
+    .cards-container {
+        .appLinks {
+            margin-top: 5%;
+        }
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@media (min-width: 320px) AND (max-width: 400px) {
+    .Featuresbackground {
+        .overlayBackground {
+            margin-top: -13%;
+
+            h1 {
+                font-size: 3em !important;
+                padding-top: 30%;
+            }
+        }
+    }
+
+    .ourFeatures {
+        .container-title {
+           align-items: center !important;
+        }
+
+        .hide-on-desk {
+            display: block !important;
+        }
+
+        .hide-on-mobile {
+            display: none !important;
+        }
+    }
+
+    .cards-container {
+        .featuresMiddlePara {
+            padding-left: 0% !important;
+            padding-right: 0% !important;
+        }
+    }
+}
+
+@media (min-width: 400px) AND (max-width: 520px) {
+    .Featuresbackground {
+        .overlayBackground {
+            margin-top: -10%;
+
+            h1 {
+                font-size: 3em !important;
+                padding-top: 30%;
+            }
+        }
+    }
+
+    .ourFeatures {
+        .container-title {
+           align-items: center !important;
+        }
+
+        .hide-on-desk {
+            display: block !important;
+        }
+
+        .hide-on-mobile {
+            display: none !important;
+        }
+    }
+
+    .cards-container {
+        .featuresMiddlePara {
+            padding-left: 0% !important;
+            padding-right: 0% !important;
+        }
+    }
+}
+
+@media (min-width: 520px) AND (max-width: 650px) {
+    .Featuresbackground {
+        .overlayBackground {
+            margin-top: -8%;
+        }
+    }
+
+    .ourFeatures {
+        .container-title {
+           align-items: center !important;
+        }
+
+        .hide-on-desk {
+            display: block !important;
+        }
+
+        .hide-on-mobile {
+            display: none !important;
+        }
+    }
+}
+
+@media (min-width: 650px) AND (max-width: 810px) {
+    .Featuresbackground {
+        .overlayBackground {
+            margin-top: -6%;
+        }
+    }
+
+    .ourFeatures {
+        .container-title {
+           align-items: center !important;
+        }
+
+        .hide-on-desk {
+            display: block !important;
+        }
+
+        .hide-on-mobile {
+            display: none !important;
+        }
+    }
+}
+
+@media (min-width: 810px) AND (max-width: 1000px) {
+    .Featuresbackground {
+        .overlayBackground {
+            margin-top: -5%;
+        }
+    }
+
+    .ourFeatures {
+        .container-title {
+           align-items: center !important;
+        }
+
+        .hide-on-desk {
+            display: block !important;
+        }
+
+        .hide-on-mobile {
+            display: none !important;
+        }
+    }
+}
+
+@media (min-width: 970px) AND (max-width: 1075px) {
+    .Featuresbackground {
+        .overlayBackground {
+            margin-top: -5%;
+        }
+    }
+    /* .coverImageContainer {
+        height: 20vh;
+    } */
+}
+
+@media (min-width: 1075px) AND (max-width: 1350px) {
+    /* .coverImageContainer {
+        height: 25vh;
+    } */
+}
+
+@media (min-width: 1000px) AND (max-width: 1165px) {
+    .Featuresbackground {
+        .overlayBackground {
+            margin-top: -4%;
+        }
+    }
+}
+
+@media (min-width: 1165px) AND (max-width: 1600px) {
+    .Featuresbackground {
+        .overlayBackground {
+            margin-top: -3%;
+        }
+    }
+}
+
+@media (min-width: 1350px) AND (max-width: 1620px) {
+    /* .coverImageContainer {
+        height: 30vh;
+    } */
+}
+
+@media (min-width: 1620px) AND (max-width: 1750px) {
+    /* .coverImageContainer {
+        height: 35vh;
+    } */
+}
+
+@media (min-width: 1600px) AND (max-width: 1750px) {
+    .Featuresbackground {
+        .overlayBackground {
+            margin-top: -2.5%;
+        }
+    }
+}
+
+@media (min-width: 1750px) AND (max-width: 2050px) {
+    .Featuresbackground {
+        .overlayBackground {
+            margin-top: -2.5%;
+        }
+    }
+
+    .ourFeatures {
+        .cards-container {
+            p {
+                font-size: 1.2em !important;
+            }
+        }
+    }
+    /* .coverImageContainer {
+        background-size: cover;
+        height: 50vh;
+        background-repeat: no-repeat;
+    } */
+}
+
+@media (min-width: 2050px) AND (max-width: 2365px) {
+    .Featuresbackground {
+        .overlayBackground {
+            margin-top: -2%;
+        }
+    }
+
+    .ourFeatures {
+        .cards-container {
+            p {
+                font-size: 1.2em !important;
+            }
+        }
+    }
+    /* .coverImageContainer {
+        background-size: cover;
+        height: 50vh;
+        background-repeat: no-repeat;
+    } */
+}
+
+@media (min-width: 2365px) AND (max-width: 3000px) {
+    .Featuresbackground {
+        .overlayBackground {
+            margin-top: -1.5%;
+        }
+    }
+
+    .ourFeatures {
+        .cards-container {
+            p {
+                font-size: 1.3em !important;
+            }
+        }
+    }
+    /* .coverImageContainer {
+        background-size: cover;
+        height: 50vh;
+        background-repeat: no-repeat;
+    } */
+}

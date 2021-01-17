@@ -1,0 +1,346 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:800|Merriweather+Sans|Share+Tech+Mono");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:300,500,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;700;900&display=swap");
+
+body {
+  overflow-x: hidden;
+}
+
+.hide-on-desk-home {
+  display: none !important;
+}
+
+.hide-on-mobile-home {
+  display: block !important;
+}
+
+.muted-text, .muted-text p {
+  color: #A1A1A1;
+}
+
+.formEmail .content-button {
+  font-family: "Source Serif Pro", sans-serif;
+}
+
+.first-container-home .text-container p {
+  color: #A1A1A1;
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+
+.content-align-center {
+  text-align: center;
+}
+
+.feature-text-container, .why-inspirable-container {
+  margin-top: auto !important;
+  margin-bottom: auto !important;
+}
+
+.feature .image-container img {
+  max-width: 450px !important;
+}
+
+.upper-triangle {
+  clip-path: polygon(81% 0, 0% 100%, 100% 100%);
+  background: #F2F9FB !important;
+  height: 100px;
+}
+
+.lower-triangle-home {
+  clip-path: polygon(19% 100%, 0 0, 100% 0);
+  background: #F2F9FB !important;
+  height: 100px;
+}
+
+.animation_child_content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1.3em 0 6em;
+  width: 100%;
+  height: auto;
+}
+
+.animation-container-l {
+  display: flex;
+  justify-content: flex-end;
+  text-align: right;
+  padding-right: 20px;
+  height: auto;
+  max-width: 500px;
+}
+
+.animation-bubble-container {
+  display: flex;
+  width: 100%;
+}
+
+.animation-container-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  height: 750px;
+}
+.animation-container-center .animation {
+  width: 100%;
+  position: absolute;
+}
+.animation-container-center .MuiContainer-root {
+  position: absolute;
+  top: 16em;
+  z-index: 10;
+  height: 350px;
+}
+.animation-container-center .title_cards {
+  z-index: 10;
+  position: absolute;
+  top: 10em;
+}
+.animation-container-center .title_cards span {
+  top: -30px;
+  position: relative;
+  color: #2a2a52;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+.animation-container-center .cards-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.container-title .text:after {
+  content: ".";
+  display: block;
+  height: 1px;
+  width: 100px;
+  margin: 0.5em auto;
+  text-indent: -9999px;
+  border-top: 3px solid #334d5e;
+}
+
+.container-title span {
+  font-weight: bold;
+}
+
+.center-title {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  align-items: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.center-title .text:after {
+  content: "";
+  display: none;
+}
+
+.center-title img,
+.center-title img {
+  margin-right: 10px;
+}
+
+.feature-description {
+  color: #A1A1A1;
+}
+
+@media only screen and (min-width: 1700px) {
+  .image-layout-container .container-title p {
+    font-size: 2.7em !important;
+  }
+
+  .why-inspirable-container p, .feature-text-container p {
+    font-size: 1.6em;
+  }
+
+  .first-container-home .text-container p {
+    font-size: 1.6em;
+  }
+
+  .animation-container-center .title_cards span {
+    font-size: 1.6em;
+  }
+
+  .subscribe .subscribeForm h2 {
+    font-size: 2.2em !important;
+  }
+  .subscribe .subscribeForm p {
+    font-size: 1.6em;
+  }
+
+  .why-inspirable-container h2 {
+    font-size: 2.2em !important;
+  }
+
+  .animation-container-center p.title {
+    font-size: 2.2em !important;
+  }
+  .animation-container-center .title_cards {
+    z-index: 10;
+    position: absolute;
+    top: 8em;
+  }
+
+  .app-features-container .container-title p {
+    font-size: 2.2em !important;
+  }
+}
+@media only screen and (min-width: 1440px) and (max-width: 1699px) {
+  .why-inspirable-container p, .feature-text-container p {
+    font-size: 1.4em;
+  }
+
+  .first-container-home .text-container p {
+    font-size: 1.4em;
+  }
+
+  .animation-container-center .title_cards span {
+    font-size: 1.4em;
+  }
+
+  .subscribe .subscribeForm h2 {
+    font-size: 2em !important;
+  }
+  .subscribe .subscribeForm p {
+    font-size: 1.4em;
+  }
+
+  .image-layout-container .container-title p {
+    font-size: 2.5em !important;
+  }
+
+  .why-inspirable-container h2 {
+    font-size: 2em !important;
+  }
+
+  .animation-container-center p.title {
+    font-size: 2em !important;
+  }
+  .animation-container-center .title_cards {
+    z-index: 10;
+    position: absolute;
+    top: 8em;
+  }
+
+  .app-features-container .container-title p {
+    font-size: 2em !important;
+  }
+}
+@media only screen and (min-width: 1280px) and (max-width: 1399px) {
+  .MuiContainer-root {
+    max-width: 1000px !important;
+  }
+
+  .feature .image-container img {
+    max-width: 300px !important;
+  }
+}
+@media only screen and (min-width: 950px) and (max-width: 1279px) {
+  .MuiContainer-root {
+    max-width: 900px !important;
+  }
+
+  .feature .image-container img {
+    max-width: 300px !important;
+  }
+}
+@media only screen and (min-width: 1130px) {
+  .animation .upper-triangle {
+    display: block !important;
+  }
+}
+@media only screen and (max-width: 1096px) {
+  .animation .lower-triangle-home {
+    display: none !important;
+  }
+
+  .animation .upper-triangle {
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .animation-container-center {
+    height: 900px;
+  }
+  .animation-container-center .animation {
+    display: none;
+  }
+  .animation-container-center .cards-container {
+    flex-direction: column;
+    height: 750px;
+  }
+  .animation-container-center .title_cards {
+    top: 4em;
+  }
+
+  .feature .image-container img {
+    max-width: 400px !important;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .app-features-container {
+    padding-top: 25px;
+  }
+
+  .center-title {
+    flex-direction: column;
+  }
+
+  p {
+    text-align: center !important;
+  }
+
+  .center-title {
+    text-align: center !important;
+    width: 100%;
+  }
+
+  .hide-on-desk-home {
+    display: block !important;
+  }
+
+  .hide-on-mobile-home {
+    display: none !important;
+  }
+
+  .animation-container-center {
+    height: 990px;
+    background: #F2F9FB;
+  }
+
+  .cards-container {
+    top: 12em !important;
+  }
+
+  .feature .image-container {
+    text-align: center;
+  }
+  .feature .image-container img {
+    max-width: 300px !important;
+  }
+
+  .feature-text-container, .why-inspirable-container {
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+    text-align: center;
+  }
+
+  .animation-container-center .MuiContainer-root {
+    position: absolute;
+    top: 12em;
+    z-index: 10;
+    height: 350px;
+  }
+
+  .app-features-container .center-title .container-title {
+    margin-top: 20px;
+  }
+}

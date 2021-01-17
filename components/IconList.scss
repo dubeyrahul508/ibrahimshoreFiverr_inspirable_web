@@ -1,0 +1,19 @@
+.iconsList{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+   .icon{
+
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 17px;
+
+    }
+}
+
+@media (min-width: 1600px) {
+    .iconsList .icon {
+        font-size: 1.5rem;
+    }
+}

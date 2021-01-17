@@ -1,0 +1,39 @@
+@import "../theme/theme";
+
+  .benefitsCard{
+    width: 260px;
+    height: 150px;
+    background-color: $primary;
+
+    margin: 1em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+
+    color: #334d5e;
+
+    font-family:sans-serif;
+
+    padding-left: 25px;
+    padding-right: 25px;
+
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border: 0px none #000000;
+
+
+     .iconBenefitsCard{
+       height: 50%;
+       display: flex;
+       align-items: flex-end;
+       padding-bottom: 5px;
+     }
+
+     .textBenefitsCard{
+       height: 50%;
+     }
+    }

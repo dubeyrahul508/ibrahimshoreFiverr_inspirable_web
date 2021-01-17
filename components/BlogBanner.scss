@@ -1,0 +1,131 @@
+
+@import "../theme/theme";
+
+
+.full-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    cursor: pointer;
+    color: $primary-dark;
+    width: 100%;
+    max-width: 1100px;
+    &:hover{
+        background-color: $primary-dark;
+        color: white;
+
+        h3 {
+            color: white;
+        }
+    }
+
+    .img-container{
+         display: flex;
+         flex-direction: column;
+         width: 50%;
+         
+        img{
+            width: 100%;
+            height: 100% !important;
+        }
+    }
+
+    .full-text-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 1.3em;
+        width: 49%;
+        .hide-on-desk{
+            display: none !important;
+        }
+
+        .title{
+            font-size: 2rem;
+            font-weight: bold;
+           
+        }
+
+        .hide-on-mobile{
+            box-sizing: content-box;
+            max-lines: 5;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box !important;
+            -webkit-line-clamp: 5; 
+            -webkit-box-orient: vertical;
+        }
+
+
+        .preview{
+            margin-top: 2em;
+            margin-bottom: 2em;
+        }
+    }
+}
+
+@media only screen and (min-width: 791px) and (max-width: 1156px){
+    .full-container{
+        max-width: 755px;
+        .img-container{
+            display: flex;
+            flex-direction: column;
+            width: 49%;
+            img{
+                height: 250px;
+            }
+        }
+   
+        .full-text-container{
+            width: 49%;
+        }
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 790px){
+    .full-container{
+        max-width: 320px;
+        text-align: center;
+        
+        .title{
+            margin-top:10px;
+        }
+        .date{
+            margin-top:10px;
+        }
+        .img-container{
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            img{
+                height: 220px;
+            }
+        }
+   
+        .full-text-container{
+
+            .hide-on-mobile{
+                display: none !important;
+            }
+
+            .hide-on-desk{
+                box-sizing: content-box;
+                max-lines: 5;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box !important;
+                -webkit-line-clamp: 5; 
+                -webkit-box-orient: vertical;
+            }
+
+            width: 300px;
+        }
+    }
+}
+
+@media (min-width: 1600px) {
+    .full-container {
+        max-width: 83%;
+    }
+}

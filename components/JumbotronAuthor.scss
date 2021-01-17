@@ -1,0 +1,64 @@
+@import "../theme/theme";
+
+.container-jumbotron{
+    display: flex;
+    height: auto !important;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    flex-wrap: wrap;
+    height: 150px;
+    background-color: #F6F6F6 ;
+    
+    .author-data{
+        width: 80%;
+        height: 100%;
+        overflow: hidden;
+        margin-bottom: 1rem;
+        h3{
+            color: $primary-dark;
+        }
+        span{
+            color: #8F8F8F;
+        }
+    }
+
+    .image-author{
+        width: 20%;
+        display: flex;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        justify-content: center;
+        img{
+            max-width: 80%;
+            height: auto;
+        }
+       
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .container-jumbotron{
+         flex-direction: column;
+         height:350px;
+         width: 100%;
+         text-align: center;
+
+        .author-data{
+          
+            display: flex;
+            flex-direction: column;
+        }
+        .image-author{
+            
+            display: flex;
+            justify-content: center;
+            border-radius: 1em;
+            img{
+                max-width: 80px;
+                max-height: 80px;
+                border-radius: 50%;
+            }
+    }
+}
+}

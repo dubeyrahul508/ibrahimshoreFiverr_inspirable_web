@@ -1,0 +1,81 @@
+
+@import "../theme/theme";
+
+
+.container-title{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 5px;
+
+    .title{
+        color: $primary-dark !important;
+        padding-bottom: 8px;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .subTitle{
+        color: $primary-dark;
+        text-align: center;
+        font-size: 18px;
+        justify-content: center;
+        padding-bottom: 1em;
+    }
+
+    .subtitle {
+        font-weight: 100;
+    }
+
+    .text:after{
+        content: '.';
+        display: block;
+        height: 1px;
+        width: 100px;
+        margin: .5em auto;
+        text-indent: -9999px;
+        border-top: 4px solid $primary-dark;
+    }
+
+    .title:after {
+        border-top: 4px solid $primary-dark !important;
+    }
+
+    .underline:after {
+        margin: 10px 0px 0px 0px !important;
+    }
+}
+
+@media (min-width: 320px) AND (max-width: 950px) {
+    .container-title {
+        .underline:after {
+            margin: 0 auto !important;
+        }
+    }
+}
+
+@media (min-width: 1600px) AND (max-width: 1800px) {
+    .title {
+        font-size: 1.9rem!important;
+    }
+}
+
+@media (min-width: 1800px) AND (max-width: 2000px) {
+    .title {
+        font-size: 2.0rem!important;
+    }
+}
+
+@media (min-width: 2000px) AND (max-width: 2200px) {
+    .title {
+        font-size: 2.1rem!important;
+    }
+}
+
+@media (min-width: 2400px) {
+    .title {
+        font-size: 2.2rem!important;
+    }
+}

@@ -1,0 +1,88 @@
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+.first-container-closeaccount {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    flex-direction: column;
+    background-color: #E8FCFF;
+    justify-content: center;
+    align-items: center;
+}
+.closeAccountContent {
+    margin: 50px auto;
+
+    h3 {
+        font-size: larger;
+        font-weight: bold;
+        color: #334D5E;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .form-check-input {
+        width: 20px;
+        height: 20px;
+    }
+
+    label {
+        font-size: larger;
+        padding-top: 3px;
+        padding-left: 10px;
+    }
+
+    .label {
+        display: flex;
+        margin-left: 20px;
+    }
+
+    textArea {
+        width: 500px;
+        height: 200px;
+    }
+
+    .buttons {
+        margin-top: 15px;
+        margin-bottom: 20px;
+
+        .backToSetting {
+            height: 30px;
+            width: 130px;
+            border-radius: 20px;
+            border: none;
+            color: white;
+            background-color: #334D5E;
+            margin-right: 30px;
+        }
+
+        .next {
+            height: 30px;
+            width: 50px;
+            border-radius: 20px;
+            border-color: #334D5E;
+            background-color: white;
+            color: #334D5E;
+        }
+    }
+}
+
+@media (min-width: 280px) AND (max-width: 400px) {
+    .closeAccountContent {
+        margin-left: 50px !important;
+        
+        textArea {
+            width: 200px;
+            height: 100px;
+        }
+    }
+}
+
+@media (min-width: 400px) AND (max-width: 500px) {
+    .closeAccountContent {
+        margin-left: 50px !important;
+        
+        textArea {
+            width: 300px;
+        }
+    }
+}

@@ -1,0 +1,20 @@
+.shared-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    right: 0;
+    top: 30%;
+    margin-left: 1em;
+    padding-left: 2em ;
+    z-index: 10;
+
+    .icon{
+        
+        padding-left: 5px;
+        padding-right: 10px;
+        font-size: 25px;
+        padding-bottom: 1em;
+    }
+
+}

@@ -1,0 +1,36 @@
+
+import React from "react";
+import Layout from "../components/layout";
+import ReactHtmlParser from "react-html-parser";
+import Parser from "html-react-parser";
+import './privacy.scss'
+import Banner from "../components/Banner";
+
+const Privacy = ({ data }) => {
+  console.log(data);
+  return (
+    <Layout>
+        <Banner />
+       <div className="legal-content">
+            {ReactHtmlParser(data)}
+       </div>
+    </Layout>
+  );
+};
+
+export async function getStaticProps() {
+  // Call an external API endpoint to get posts.
+  // You can use any data fetching library
+  const res = await fetch("https://production.inspirable.io/api/pages/privacy-policy");
+  const content = await res.json();
+
+  // By returning { props: posts }, the Blog component
+  // will receive `posts` as a prop at build time
+  return {
+    props: {
+       data: content.data.replace(/&nbsp;/g, '')
+    },
+  };
+}
+
+export default Privacy;

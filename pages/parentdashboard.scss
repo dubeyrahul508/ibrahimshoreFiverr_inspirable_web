@@ -1,0 +1,244 @@
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+.parentDashboard {
+    background-color: #f8fcff;
+}
+
+.customContainer {
+    margin: 50px;
+
+    .background {
+        img {
+            width: 100%;
+            height: 20vh;
+        }
+    }
+
+    .userDetails {
+        .avatar {
+            width: 80px;
+            height: 80px;
+            background-color: white;
+            border-radius: 50%;
+            text-align: center;
+            position: absolute;
+            top: 130px;
+            left: 30px;
+            border: 3px solid rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+
+        .content {
+            padding-left: 120px;
+            margin-top: 10px;
+
+            h5 {
+                font-weight: bold;
+                margin: 0px;
+            }
+
+            p {
+                color: grey;
+            }
+        }
+    }
+
+    .booksInfo {
+        margin-top: 100px;
+
+        .currentlyReading,
+        .viewAll {
+            font-size: initial;
+            width: 160px;
+            border-radius: 20px;
+            border: none;
+            margin-right: 30px;
+            height: 30px;
+        }
+
+        .currentlyReading {
+            background-color: aliceblue;
+        }
+
+        .viewAll {
+            float: right;
+            width: 100px;
+        }
+
+        .booksCompleted {
+            width: 160px;
+            border-radius: 20px;
+            border: none;
+            height: 30px;
+        }
+
+        .books {
+            padding: 10px;
+        }
+        .nav-tabs {
+            padding-left: 10px;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .tab-pane {
+            width: 100%;
+        }
+        .card {
+            height: 200px;
+            background-color: rgba(0, 0, 0, 0.4);
+            color: white;
+            font-size: 40px;
+            margin: 10px;
+            flex: 100px 0 0;
+            box-shadow: 6px 7px 3px 3px rgba(0,0,0,0.05);
+        }
+        .cards img {
+            width: 100%;
+            object-fit: cover;
+        }
+        .cards-wrapper {
+            display: flex; 
+            transition: ease 0.5s;
+
+            .card {
+                height: auto;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        .display-area {
+            width: 100%;
+            /*   border: 1px solid black; */
+            overflow-x: hidden;
+            margin: auto;
+        }
+        
+        .dots-wrapper {
+            .next {
+                position: absolute;
+                bottom: unset;
+                top: 110px;
+                left: unset;
+                right: 1px;
+                height: 60%;
+                background: transparent;
+                border: none;
+                opacity: 0.2;
+                transition: all ease 1s;
+            }
+
+            .next:hover {
+                opacity: 1;
+            }
+
+            .prev {
+                position: absolute;
+                bottom: unset;
+                top: 110px;
+                height: 60%;
+                background: transparent;
+                border: none;
+                opacity: 0.2;
+                transition: all ease 1s;
+
+                img {
+                    transform: rotateY(180deg);
+                }
+            }
+
+            .prev:hover {
+                opacity: 1;
+            }
+        }
+        
+        .dot {
+            border: none;
+            background: rgba(0, 0, 0, 0.2);
+            width: 20px;
+            height: 20px;
+            margin: 5px;
+            border-radius: 50%;
+            outline: none;
+        }
+        .dot:hover {
+            background: rgba(0, 0, 0, 0.3);
+        }
+        .dot.active {
+            background: rgba(0, 0, 0, 0.5);
+        }
+    }
+
+    .rightCol {
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+
+        h5 {
+            font-weight: bold;
+            text-align: left;
+        }
+
+        .firstCard {
+            margin-top: 20px;
+        }
+
+        .avatar {
+            img {
+                border-radius: 50%;
+            }
+        }
+
+        .card {
+            text-align: center;
+            align-items: center;
+            padding-top: 20px;
+
+            .blueText {
+                color: #169ca3;
+                padding-top: 10px;
+                font-weight: bold;
+            }
+        }
+
+        .secondCard {
+            margin-top: 80px;
+
+            .borderTime {
+                border: 2px solid #169ca3;
+                padding: 10px 10px 0px 10px;
+                border-radius: 10px;
+                margin-bottom: 10px;
+
+                p {
+                    color: #169ca3;
+                }
+            }
+
+            .blueText {
+                color: #169ca3;
+            }
+        }
+
+        button {
+            border: none;
+            width: 110px;
+            height: 30px;
+            border-radius: 20px;
+            color: white;
+            background-color: #169ca3;
+            margin-top: 20px;
+        }
+    }
+}
+
+//Mobile Views
+@media (min-width: 320px) AND (max-width: 480px) {
+    .parentDashboard {
+        .dropdown-menu {
+            left: -30%;
+        }
+    }
+}

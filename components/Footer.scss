@@ -1,0 +1,85 @@
+@import "../theme/theme";
+
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 250px;
+    width: 100%;
+    background: $primary-dark;
+    align-items: center;
+
+    .image-column{
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+
+        .icons-content{
+            display: flex;
+        }
+
+        .appButton{
+            margin: 6px 10px 0px 10px;
+            width: 150px;
+        }
+    }
+   
+    .logo-hold img {
+        width: 120px;
+        color: $primary;
+        
+    }   
+
+    .content-links{
+        flex: 1;
+    }
+
+    .logo-link{
+        cursor: pointer;
+    }
+    
+}
+
+.content-privacy{
+    display: flex;
+    border-top: solid 0.3px $primary;
+    justify-content: center;
+    background-color: $primary-dark;
+    height: 40px;
+    align-items: center;
+
+    span{
+        color: $primary;
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 1700px) {
+    .footer-content .logo-hold img {
+        width: 190px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+
+    .footer-content {
+        height: 350px;
+        .content-links{
+           align-items: center;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px){
+    .footer-content{
+        display:block;
+        height: inherit;
+        .logo-hold img {
+           margin-top: 30px;            
+        } 
+    }
+}

@@ -1,0 +1,38 @@
+
+@import "../theme/theme";
+
+.navButton {
+    display: flex;
+    height: 100%;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: $primary-dark;
+    
+  }
+
+  .active {
+    border-bottom: 2px  solid  #d2f2f7;
+    padding-bottom: 2.5px;
+    color:  #FBA967;
+  }
+
+
+  
+@media only screen and (max-width: 992px) {
+
+     .navButton{
+       font-size: 1.2rem;
+     }
+
+     .active{
+         color: transparent;
+         background-color: #f2f9fb85;
+         border-radius: 1rem;
+         padding: 1em;
+         width: 446px;
+         border-bottom: transparent;
+     }
+
+}

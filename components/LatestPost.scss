@@ -1,0 +1,52 @@
+@import "../theme/theme";
+
+
+
+
+
+.last-post-container{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    margin: 2em;
+    box-shadow: 1px 28px 56px -3px rgba(0,0,0,0.10);
+    cursor: pointer;
+    border-radius: 10px;
+
+   
+
+    &:hover{
+        background-color: $primary-dark;
+        color: white;
+     
+    }
+
+    .image-container-latest-post{
+       
+        height: 220px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        z-index: 1;
+
+        .arrow-icon{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 20px;
+            height: 20px;
+            display: none;
+            color: #FFF;
+            background: rgba(0, 0, 0, .6);
+        }
+
+        &:hover{
+            background: rgba(0, 0, 0, .5);
+            z-index: 3;
+        }
+    }
+
+    .container-text{
+        margin: 1em;
+        text-align: center;
+    }
+}

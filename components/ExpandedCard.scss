@@ -1,0 +1,96 @@
+@import "../theme/theme";
+
+
+.card-container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+
+.card-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em;
+  
+   
+}
+
+.card-excerpt{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 250px;
+    background-color: #5dbcd2;   
+    color: white;
+    align-items: center;
+    /* justify-content: center; */
+    border-radius: 10px;
+    padding: 1em;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $primary-dark 
+    }
+
+    &.open 
+    {
+        background-color: $primary-dark ;
+    }
+    
+}
+
+.helpdeskFAQ {
+    width: 450px;
+    height: auto;
+    background-color: transparent;
+
+    &:hover {
+        background-color: transparent; 
+    }
+
+    &.open 
+    {
+        background-color: transparent;
+    }
+}
+
+
+.card-content {
+
+    overflow: hidden;
+    transition: max-height 0.3s cubic-bezier(1, 0, 1, 0);
+    height: auto;
+    max-height: 9999px;
+    padding: 2em;
+
+}
+
+@media (max-width: 760px) {
+    .card-container {
+        width: 100%;
+
+        .helpdeskFAQ {
+            width: 100%;
+        }
+    }
+}
+
+@media (min-width: 760px) AND (max-width: 840px) {
+    .helpdeskFAQ {
+        width: 350px;
+    }
+}
+
+@media (min-width: 760px) AND (max-width: 840px) {
+    .helpdeskFAQ {
+        width: 350px;
+    }
+}
+
+@media (min-width: 840px) AND (max-width: 950px) {
+    .helpdeskFAQ {
+        width: 400px;
+    }   
+}

@@ -1,0 +1,120 @@
+.singleBlogLogin {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.3);
+    z-index: 1000;
+
+    .form {
+        width: 40%;
+        height: 60%;
+        background-color: white;
+        margin: 0 auto;
+        margin-top: 10%;
+        margin-bottom: 10%;
+
+        .formHeader {
+            width: 100%;
+            position: relative;
+
+            .title {
+                display: flex;
+                border-bottom: 1px solid rgba(0,0,0,0.1);
+
+                h2 {
+                    padding-left: 3%;
+                }
+
+                .imgHolder {
+                    width: 100%;
+                    padding: 2%;
+
+                    img {
+                        width: 35px;
+                        height: 35px;
+                        float: right;
+                    }
+                }
+            }
+
+            .formContent {
+                display: flex;
+                padding: 10% 5% 0% 5%;
+
+                input {
+                    margin-bottom: 5%;
+                    background: transparent;
+                    border: 1px solid #2a2a9c;
+
+                    &:focus {
+                        border: 2px solid turquoise;
+                    }
+                }
+
+                p {
+                    color: #2a2a9c;
+                }
+
+                button {
+                    margin: 25%;
+                    border: none;
+                    background-color: #c7d9e9;
+                    padding-left: 5%;
+                    padding-right: 5%;
+
+                    img {
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+            }
+
+            .formFooter {
+                display: flex;
+                position: absolute;
+                top: unset;
+                bottom: 20px;
+                width: 100%;
+                padding-left: 30px;
+                border-top: 1px solid rgba(0,0,0,0.1);
+                padding-top: 5%;
+
+                button {
+                    font-size: 1.5em;
+                    background-color: #3a84ff;
+                    color: white;
+                    border: none;
+                    padding-left: 2%;
+                    padding-right: 2%;
+                }
+
+                p {
+                    color: #3a84ff;
+                    margin-top: 1%;
+                    margin-left: 5%;
+                    font-size: 1.2em;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 300px) AND (max-width: 500px) {
+    .singleBlogLogin {
+        .form {
+            width: 90%;
+
+            .formHeader {
+                .formContent {
+                    form {
+                        margin-right: 5%;
+                    }
+                    button {
+                        margin-top: 70%;                       
+                    }
+                }
+            }
+        }
+    }
+}

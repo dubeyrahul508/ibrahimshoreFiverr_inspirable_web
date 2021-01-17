@@ -1,0 +1,138 @@
+@import "../theme/theme";
+
+.first-container-help-desk{
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding-top: 5%;
+    margin-bottom: 5%;
+    background-color: $primary ;
+    color: #2C2D36;
+    padding-bottom: 40px;
+   
+    .paragraph {
+        text-align: center;
+        padding: 0px 5% 0px 5%;
+    }
+
+}
+
+.helpdesk-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 950px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.help-container{
+    display: flex;
+    justify-content: center;
+}
+
+.helpdeskbox-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.questions-container{
+    width: 100%;
+    box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.10);
+    padding: 20px;
+    color: #2C2D36;
+    font-weight: bold;
+
+    p{
+        font-size: 2.4ex;
+    }
+
+    .question-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    
+}
+
+.info-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    p{
+        width: 70%;
+    }
+}
+
+.info-question-container{
+    margin: 60px 0px 30px;
+    padding: 20px;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 0px none #000000;
+    background: #f2f9fb;
+
+    p{
+        margin: 0;
+        color: #2C2D36;
+
+        span{
+            font-weight: bold;
+            color: #2C2D36;
+        }
+    }
+}
+
+.email-container{
+    padding: 10px 70px;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 0px none #000000;
+    background: #f2f9fb;
+    margin-top: 15px;
+
+    a{
+        margin: 0;
+        font-weight: bold;
+        color: #2C2D36;
+    }
+
+    svg{
+        margin-right: 15px;
+    }
+}
+
+.info-container{
+    color: #2C2D36;
+}
+
+@media (max-width: 520px) {
+    .helpdeskbox-container {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1600px) {
+    .helpdesk-container {
+        max-width: 70%;
+        font-size: 1.5rem;
+    }
+}
+

@@ -1,0 +1,40 @@
+
+
+.latest-container{
+    display: flex;
+    margin:auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 4em;
+    padding-top: 10em;
+    .posts-wrapper{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    
+    }
+}
+@media only screen and (min-width: 768px){
+    .posts-wrapper{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 1000px;
+
+    }
+}
+@media only screen and (min-width: 2000px){
+    .latest-container{
+        display: flex;
+     
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 4em;
+        width: inherit !important;
+    }
+}

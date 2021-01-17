@@ -1,0 +1,23 @@
+@import "../theme/theme";
+
+  .main_layout {
+    display: flex;
+    flex-direction: column;
+    
+    height: 100%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: $general-font;
+    
+
+  .layout-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+ 
+    
+    
+  }
+
+}

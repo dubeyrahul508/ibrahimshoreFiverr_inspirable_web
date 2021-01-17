@@ -1,0 +1,478 @@
+@import "../theme/theme";
+.hide-on-desk-home{
+    display: none !important;
+}
+.hide-on-mobile-home{
+    display: block !important;
+}
+
+.muted-text, .muted-text p {
+  color: #2C2D36;
+}
+.formEmail .content-button{
+    font-family: "Source Serif Pro", sans-serif;
+}
+.first-container-home {
+    .text-container {
+        p{
+            color: #2C2D36 !important;
+            font-size: 1.2em;
+            line-height: 1.5;
+        }
+    }
+}
+.content-align-center{
+    text-align: center;
+}
+.feature-text-container, .why-inspirable-container{
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+}
+.feature{
+    .image-container{
+        img{max-width: 100% !important;}
+    }
+}
+
+.feature_1, .feature_2, .feature_3,
+.feature_4, .feature_5, .feature_6,
+.feature_7, .feature_8 {
+    padding-top: 10%;
+    padding-bottom: 0px;
+}
+
+.text_1 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.animationContainer{
+    .upper-triangle{
+        clip-path: polygon(81% 0, 0% 100%, 100% 100%);
+        background:#F2F9FB !important;
+        height:100px;
+        margin-top: 0px !important;
+        display: none;
+    }
+    .lower-triangle-home{
+        clip-path: polygon(19% 100%, 0 0, 100% 0);
+        background:#F2F9FB !important;
+        height:100px;
+        display: none;
+    }
+}
+
+
+.animation_child_content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1.3em 0 6em;
+    width: 100%;
+    height: auto;
+}
+
+.animation-container-l{
+
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    padding-right: 20px;
+    height: auto;
+    max-width: 500px;
+
+}
+
+.animation-bubble-container{
+    display: flex;
+    width: 100%;
+}
+
+.animationContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    height: 750px;
+
+    .animation{
+        width: 100%;
+        position: absolute;
+
+
+    }
+
+    .MuiContainer-root{
+        position: absolute;
+        top: 16em;
+        z-index: 10;
+        height: 350px;
+    }
+    .title_cards{
+        z-index: 10;
+        position: absolute;
+        top: 10em;
+
+        span{
+            top: -30px;
+            position: relative;
+            color: #2C2D36;
+            font-size: 1.2rem;
+            line-height: 1.5;
+
+        }
+    }
+
+    .cards-container{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+    
+    
+.container-title .text:after {
+    content: '.';
+    display: block;
+    height: 1px;
+    width: 100px;
+    margin: .5em auto;
+    text-indent: -9999px;
+    border-top: 3px solid #334d5e;
+}
+/* .container-title span{
+    font-weight: bold;
+} */
+.center-title{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    align-items: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.center-title .text:after {
+    content: '';
+    display: none;
+}
+.center-title img,
+.center-title img{
+    margin-right: 10px;
+}
+.feature-description{
+    color: #2C2D36;
+}
+.title-with-image{
+    display:inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.title-with{
+    display:inline-block;
+}
+.content-align-title{
+    text-align: left;
+}
+@media only screen and (min-width: 2000px){
+        
+    .image-layout-container{
+        .container-title{
+            p{
+                font-size: 2.7em !important;
+            }
+        }
+    }
+    .why-inspirable-container, .feature-text-container{
+        p{
+            font-size: 1.8em;
+        }
+    }
+    .first-container-home .text-container p{
+        font-size: 1.8em;
+    }
+    .animationContainer .title_cards span{
+        font-size: 1.8em;
+    }
+    .subscribe{
+        .subscribeForm{
+            h2{
+                font-size: 2.4em !important;
+            }
+            p{
+                font-size: 1.8em;
+            }
+        }
+    }
+    .why-inspirable-container{
+        h2{
+            font-size: 2.4em !important;
+        }
+    }
+    .animationContainer{
+        p.title{
+            font-size: 2.4em !important;
+        }
+        .title_cards {
+            z-index: 10;
+            position: absolute;
+            top: 8em;
+        }
+    }
+    .app-features-container .container-title p{
+        font-size: 2.4em !important;
+    }
+}
+@media only screen and (min-width: 1700px){
+    .MuiContainer-root{
+        max-width: 100% !important;
+        padding-left: 10% !important;
+        padding-right: 10% !important;
+    }
+    .image-layout-container{
+        .container-title{
+            p{
+                font-size: 2.7em !important;
+            }
+        }
+    }
+    /* .first-container-home .video-home .video-container .video1 .image-video {
+        width: 50vh;
+    } */
+    .first-container-home .video-home .video-container .video1 button {
+        height: 70px;
+    }
+    .why-inspirable-container, .feature-text-container{
+        p{
+            font-size: 1.6em;
+        }
+        .center-title{
+            justify-content: left !important;
+        }
+    }
+    .first-container-home .text-container p{
+        font-size: 1.6em;
+    }
+    .animationContainer .title_cards span{
+        font-size: 1.6em;
+    }
+    .subscribe{
+        .subscribeForm{
+            h2{
+                font-size: 2.2em !important;
+            }
+            p{
+                font-size: 1.6em;
+            }
+        }
+    }
+    .why-inspirable-container{
+        h2{
+            font-size: 2.2em !important;
+        }
+    }
+    .animationContainer{
+        p.title{
+            font-size: 2.2em !important;
+        }
+        .title_cards {
+            z-index: 10;
+            position: absolute;
+            top: 8em;
+        }
+    }
+    .app-features-container .container-title p{
+        font-size: 2.2em !important;
+    }
+}
+@media only screen and (min-width: 1440px) and (max-width: 1699px) {
+    .MuiContainer-root{
+        max-width: 100% !important;
+        padding-left: 10% !important;
+        padding-right: 10% !important;
+    }
+    .why-inspirable-container, .feature-text-container{
+        p{
+            font-size: 1.4em;
+        }
+        .center-title{
+            justify-content: left !important;
+        }
+    }
+    .first-container-home .text-container p{
+        font-size: 1.4em;
+    }
+    .animationContainer .title_cards span{
+        font-size: 1.4em;
+    }
+    .subscribe{
+        .subscribeForm{
+            h2{
+                font-size: 2em !important;
+            }
+            p{
+                font-size: 1.4em;
+            }
+        }
+    }
+    .image-layout-container{
+        .container-title{
+            p{
+                font-size: 2.5em !important;
+            }
+        }
+    }
+    .why-inspirable-container{
+        h2{
+            font-size: 2em !important;
+        }
+    }
+    .animationContainer{
+        p.title{
+            font-size: 2em !important;
+        }
+        .title_cards {
+            z-index: 10;
+            position: absolute;
+            top: 8em;
+        }
+    }
+    .app-features-container .container-title p{
+        font-size: 2em !important;
+    }
+}
+
+@media only screen and (min-width: 1280px) and (max-width: 1399px) {
+    .MuiContainer-root{
+        max-width: 1200px !important;
+    }
+    .feature{
+        .image-container{
+            img{max-width: 300px !important;}
+        }
+    }
+}
+@media only screen and (min-width: 950px) and (max-width: 1279px) {
+    .MuiContainer-root{
+        max-width: 100% !important;
+    }
+    .feature{
+        .image-container{
+            img{max-width: 100% !important;}
+        }
+    }
+}
+
+
+@media only screen and (min-width: 1230px) {
+    .animation .upper-triangle,
+    .animation .lower-triangle-home{
+        display: block !important;
+    }
+    .app-features-container {
+        margin-top: 10%;
+    }
+}
+
+@media (min-width: 768px) AND (max-width: 960px) {
+    .image-container-feature {
+        text-align: center !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .image-container-feature {
+        text-align: center !important;
+    }
+    .animationContainer{
+        height: 1200px;
+        .animation{
+            display: none;
+        }
+        .cards-container{
+            flex-direction: column;
+            height: 750px;
+            margin-top: 30%;
+        }
+
+        .title_cards{
+            top: 4em;
+            text-align: center;
+        }
+    }
+    .feature{
+        .image-container{
+            img{max-width: 400px !important;}
+        }
+    }
+    
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .image-container-feature {
+        text-align: center !important;
+    }
+    .content-align-title{
+        text-align: center;
+    }
+    .app-features-container{
+        padding-top: 25px;
+    }
+    .center-title{
+        flex-direction: column;
+    }
+    p{
+        text-align: center !important;
+    }
+    .center-title{
+        text-align: center !important;
+        width: 100%;
+    }
+    .hide-on-desk-home{
+        display: block !important;
+    }
+    .hide-on-mobile-home{
+        display: none !important;
+    }
+    
+    .animationContainer{
+        height: 1100px;
+        background: #F2F9FB;
+    }
+    .cards-container{
+        top: 12em !important;
+
+    }
+    .feature{
+        .image-container{
+            text-align: center;
+            img{max-width: 300px !important;}
+        }
+    }
+    .feature-text-container, .why-inspirable-container{
+        margin-top: auto !important;
+        margin-bottom: auto !important;
+        text-align: center;
+    }
+    .animationContainer .MuiContainer-root {
+        position: absolute;
+        top: 12em;
+        z-index: 10;
+        height: 350px;
+    }
+    .app-features-container .center-title .container-title{
+        margin-top: 20px;
+    }
+    .container-title {
+        margin-top: 0px;
+        padding-top: 0px !important;
+    }
+    .feature_1 {
+        padding-top: 50px;
+    }
+}

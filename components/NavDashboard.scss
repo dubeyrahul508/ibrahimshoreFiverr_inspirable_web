@@ -1,0 +1,129 @@
+.navDashboard{
+    background:white;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+    font-size: 1.2rem;
+
+    padding-top: 20px;
+
+    .nav-menu {
+        display: grid;
+        grid-template-columns: repeat(5,auto);
+        grid-gap: 10px;
+        list-style: none;
+        text-align: center;
+        justify-content: start;
+        width: 70vw;
+    }
+}
+
+.nav-logo{
+    
+    img{
+        width: 120px;
+    }
+}
+
+.account-container{
+    display: flex;
+    justify-content: start;
+}
+
+.account-active{
+    display: grid;
+    grid-template-columns: repeat(1,auto);
+    grid-gap: 10px;
+    list-style: none;
+    text-align: center;
+    justify-content: end;
+}
+
+.nav-logo-menu{
+    display: flex;
+    justify-content: start;
+}
+
+.navDashboard{
+
+    .menu-icon{
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 992px) {
+
+    .navbarItems{
+        position: relative;
+    }
+
+    .nav-menu{
+        display: none !important;
+        flex-direction: column;
+        width: 80% !important;
+        height: 500px;
+        position: absolute;
+        top: 80px;
+        right: -100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+    }
+
+    .nav-menu.act{
+        display: flex !important;
+        background: #334d5e;
+        right: 0;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 1;
+        padding-top: 30px;
+
+        .navButton{
+            color: white;
+        }
+    }
+
+    .nav-logo{
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(25%, 50%);
+    }
+
+    .menu-icon{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 60%);
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+
+    .navDashboard{
+
+        .menu-icon{
+            display: block !important;
+        }
+    }
+
+    .header-profile-detail{
+        flex-direction: column-reverse;
+        align-items: center;
+
+        .profile-detail{
+            margin-left: 0px !important;
+            text-align: center;
+        }
+    }
+
+    .toggle{
+        display: flex;
+    }
+
+    
+
+}

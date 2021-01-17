@@ -1,0 +1,39 @@
+@import "../theme/theme";
+
+.comment-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    flex-wrap: wrap;
+    height: 150px;
+    width: 75%;
+    margin-bottom: 2em;
+    background-color: #F6F6F6 ;
+    
+    .author-data-comment{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        h3{
+            color: $primary-dark;
+        }
+        span{
+            color: #8F8F8F;
+            font-size: 16px;
+        }
+    }
+
+    .image-author-comment{
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        img{
+            max-width: 80px;
+            max-height: 80px;
+            border-radius: 50%;
+        }
+       
+    }
+}

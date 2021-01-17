@@ -1,0 +1,21 @@
+.cards-wrapper{
+    display: flex;
+    width: 1000px;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+
+
+    .tes{
+        display: flex;
+        height: 200px;
+        width: 1000px;
+        background-color: rgb(240, 233, 233);
+        
+    }
+}
+
+.card-content {
+    font-weight: 100;
+}

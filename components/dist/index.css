@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:800|Merriweather+Sans|Share+Tech+Mono");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:300,500,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;700;900&display=swap");
+/* The following line can be included in a src/App.scss */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Source Serif Pro", sans-serif;
+}
+
+p {
+  margin-top: 0;
+}
+
+button, input, textarea:focus {
+  outline: 0;
+}
+
+.button {
+  font-family: "Source Serif Pro", sans-serif;
+}
+
+.formEmail #sendEmail {
+  font-family: "Source Serif Pro", sans-serif;
+}

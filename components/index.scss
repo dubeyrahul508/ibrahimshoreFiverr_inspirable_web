@@ -1,0 +1,33 @@
+@import "../theme/theme";
+/* The following line can be included in a src/App.scss */
+* {
+    box-sizing: border-box;
+  }
+
+  html,
+  body
+  {
+    height: 100%;
+    width: 100%;
+
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: $general-font
+  }
+
+  p {
+    margin-top: 0;
+  }
+
+  button, input, textarea:focus{
+    outline: 0;
+  }
+  .button{
+    font-family: $general-font;
+  }
+  .formEmail #sendEmail{
+    font-family: $general-font;
+  }

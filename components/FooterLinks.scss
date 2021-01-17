@@ -1,0 +1,72 @@
+
+@import "../theme/theme";
+
+
+.footerLink{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+
+    span, h2 {
+        color: $primary;
+        font-size: 16px;
+    }
+
+    span{
+        cursor: pointer;
+    }
+   
+
+    .footerLink-column{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1em;
+        flex-basis: 100%;
+        flex: 1;  
+      
+    }
+
+    .appButton{
+        margin: 6px 0px 0px;
+        width: 100px;
+    }
+}
+
+
+@media only screen and (max-width: 992px) {
+    .footerLink{
+      
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px){
+    .footerLink-column{
+        display: block;
+        padding: 1em;
+    }
+    .footerLink{
+        display: block;
+        span, h2 {
+            text-align: center;
+            font-size: 20px;
+        }
+        .appButton{
+            width: 130px;
+            margin: 10px auto 5px !important;
+        }
+    }
+}
+
+@media (min-width: 1600px) {
+    .footerLink h2 {
+        font-size: 1.5rem !important;
+    }
+    .footerLink span {
+        font-size: 1.2rem !important;
+    }
+    .content-privacy span {
+        font-size: 1.2rem !important;
+    }
+}

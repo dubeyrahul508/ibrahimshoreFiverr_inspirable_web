@@ -1,0 +1,31 @@
+
+.content {
+    display: flex;  
+    flex-direction: column;
+    
+    .col{
+     display: flex;
+     flex-direction: row;
+     width: 300px;
+     height: 250px;
+     border-radius: 1px;
+     background-color:#7ad3e3;
+      h3{
+          color: white; 
+        }
+    .text-content{
+        display: flex;
+        padding: 16px;
+        text-align:center ;
+    }    
+
+ }
+
+ .expanded-content{
+     display: flex;
+     width: 500px;
+     height: 250px;
+
+ }
+}
+

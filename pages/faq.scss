@@ -1,0 +1,112 @@
+@import "../theme/theme";
+
+.first-container-faq{
+    display: flex;
+    width: 100%;
+    height: 320px;
+    flex-direction: column;
+    background-color: $primary;
+    justify-content: center;
+    align-items: center;
+    
+    .subtitle-container-faq{
+        width: 60vw;
+        text-align: center;
+        p {
+            color: #2C2D36;
+            font-size: 1.2em;
+            line-height: 1.5; 
+        }
+    }
+
+    .closeAccount {
+        width: 110px;
+        border-radius: 20px;
+        border: none;
+        height: 30px;
+        background-color: #344E5F;
+        color: white;
+        cursor: pointer;
+    }
+}
+
+.faq-cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: 3em;
+}
+
+.contact-form-faq{
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    text-align:center;
+    align-items: center;
+    padding: 3em;
+    margin: auto;
+    a{
+        background:#F2F9FB;
+        width: 50%;
+        color: #334D5E;
+        font-weight: bold;
+        padding: 10px 20px;
+        text-decoration: none;
+        margin-bottom: 20px;
+        svg{
+            margin-right: 15px;
+        }
+    }
+
+    p {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 780px) {
+    .first-container-faq .subtitle-container-faq {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .first-container-faq{
+        display: flex;
+        width: 100%;
+        height: unset;
+        flex-direction: column;
+        background-color: $primary;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact-form-faq {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding: 0em 3em 3em;
+
+        p {
+            padding: 0px;
+        }
+    }
+    .contact-form-faq a {
+        width: 100%;
+    }
+}
+
+@media (min-width: 780px) AND (max-width: 1000px) {
+    .contact-form-faq {
+        a {
+            width: 80%;
+        }
+
+        p {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+    }
+}

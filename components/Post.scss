@@ -24,6 +24,7 @@
     height: 450px;
     margin: 2em;
     cursor: pointer;
+    box-shadow: 0.05em 0.05em 0.5em 0.2em #e5e5e5;
 
     &:hover{
         background-color: $primary-dark;

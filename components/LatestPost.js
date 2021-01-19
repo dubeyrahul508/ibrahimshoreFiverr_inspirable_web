@@ -86,7 +86,7 @@ const Post = ({ post }) => {
       <div className="container-text">
         <span>by {post.author.name} - {moment(post.created_at).format("D MMMM YYYY").toString()}</span>
         <h3>{post.name}</h3>
-        <span>{getTime(post.content).text}</span>
+        <span style={{position: "absolute", bottom: "1em", left: "35%"}}>{getTime(post.content).text}</span>
       </div>
     </div>
     </Grid>

@@ -1,13 +1,14 @@
 import Post from "../components/Post";
+import LatestPost from "../components/LatestPost";
 import './Posts.scss'
 import {useEffect} from "react";
 
 const Posts = ({posts}) => {
 
   return (
-    <div className="posts-container"  style ={{paddingLeft: '5%', paddingRight: '5%'}}>
+    <div className="posts-wrapper">
       {posts.data.map((post) => (
-        <Post key={post.id} post={post} />
+        <LatestPost key={post.id} post={post} />
       ))}
     </div>
   );

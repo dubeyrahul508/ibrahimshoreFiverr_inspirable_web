@@ -1,0 +1,116 @@
+// importing this because classes borrowed from footer.scss require this
+@import "../theme/theme";
+
+// [Talha styling]
+.bg-color-pink {
+	background-color: #f35590;
+}
+.bg-color-gray {
+	background-color: #d2d8db;
+}
+.box {
+	background-color: #334d5e;
+	width: 100%;
+}
+.box-img {
+	border-radius: 10px;
+	height: 470px;
+	width: 100%;
+}
+.box-right {
+	overflow: hidden;
+}
+.navigation {
+	position: relative;
+	margin: auto;
+	overflow: hidden;
+}
+.nav-btn {
+	border-radius: 50%;
+	border: none;
+	color: white;
+	font-size: 0.7rem;
+	position: relative;
+	z-index: 2;
+}
+#nav-btn1 {
+	justify-content: left;
+}
+#nav-btn2 {
+	justify-content: center;
+}
+#nav-btn3 {
+	justify-content: right;
+}
+.nav-dash {
+	width: 92%;
+	border-top: solid 1px #d2d8db;
+	position: absolute;
+	top: 50%;
+}
+.page-text {
+	color: white;
+}
+.p-heading {
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	text-align: center;
+}
+.p-link {
+	color: #c0a45e;
+	text-decoration: underline;
+	&:hover {
+		color: white;
+	}
+}
+.mdi-36px {
+	font-size: 39px;
+	margin-right: 10px;
+}
+.app-download-icon {
+	background-color: black;
+	color: white;
+}
+@media only screen and (max-width: 870px) {
+	.nav-dash {
+		width: 89%;
+	}
+}
+@media only screen and (max-width: 680px) {
+	.nav-dash {
+		width: 82%;
+	}
+}
+@media only screen and (max-width: 575px) {
+	.nav-dash {
+		width: 89%;
+	}
+	.navigation {
+		margin-top: 40px;
+	}
+}
+@media only screen and (max-width: 400px) {
+	.nav-dash {
+		width: 82%;
+	}
+}
+// Talha styling end
+
+// css borrowed from footer.scss of inspirable footer for app links
+.image-column{
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo-hold img {
+	width: 120px;
+	color: $primary;
+	
+}
+
+.appButton{
+	margin: 6px 10px 0px 10px;
+	width: 150px;
+}

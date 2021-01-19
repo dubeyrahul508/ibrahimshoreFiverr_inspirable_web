@@ -1,6 +1,6 @@
 import Layout from "../../components/layout";
 import { getAllPostIds, getPostData, putPostData } from "../../config/posts";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom";
 import ReactHtmlParser from "react-html-parser";
 import Subcribe from "../../components/Subscribe";
@@ -22,6 +22,13 @@ const Post = ({ postData, id }) => {
   const [comment, setComment] = useState("");
   const [userName, setUserName] = useState("");
   const [show, setShow] = useState("none");
+
+  useEffect(() => {
+    if(localStorage.getItem(`blogView${id}`)!==id){
+      putPostData(id)
+      localStorage.setItem(`blogView${id}`, id);
+    }
+  }, [])
 
   const fileClick = () => {
     document.getElementById('fileUpload').click();
@@ -244,7 +251,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const postPutView = await putPostData(params.id);
+  // const postPutView = await putPostData(params.id);
   const post = await getPostData(params.id);
   return {
     props: {

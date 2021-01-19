@@ -12,7 +12,7 @@ const LatestBlog = ({ posts }) => {
     <div className="latest-container">
       <Title text="Our Latest" boldText="Blogs" fontSize="1.8em"/>
     
-    <div className="posts-wrapper">
+    <div className="posts-wrapper ">
       {newPosts.map((post) => {
         return <LatestPost key={post.id} post={post} />;
       })}

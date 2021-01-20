@@ -27,7 +27,7 @@ export default class MyDocument extends Document {
 
           <Head></Head>
         </Head>
-        <body>
+        <body style={{overflowX:"hidden"}}>
           <Main />
           <div id="modal-root"></div>
           <NextScript />

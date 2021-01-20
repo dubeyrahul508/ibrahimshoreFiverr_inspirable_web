@@ -43,6 +43,7 @@ const Blog = ({ posts }) => {
     let d = new Date(post.updated_at);
     return d.getTime() == mostRecentDate.getTime();
   });
+  console.log(mostRecentPost, "mmmmmmmmmmmmmmmmmmm")
 
   const buttons = () => {
     if(posts.links.next !== null) {

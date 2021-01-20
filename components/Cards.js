@@ -37,7 +37,7 @@ const Cards = () => {
           </div>
         </div>
         </ActiveLink>
-        {/* <ActiveLink href={"/helpdesk"}>
+        <ActiveLink href={"/helpdesk"}>
         <div class="card">
           <div className="iconCard">
             <HelpOutline style={{ fontSize: 40 }} />
@@ -46,7 +46,7 @@ const Cards = () => {
             Help Desk
           </div>
         </div>
-        </ActiveLink> */}
+        </ActiveLink>
         <ActiveLink href={"/blog"}>
         <div class="card">
           <div className="iconCard">

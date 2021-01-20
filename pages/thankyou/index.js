@@ -4,8 +4,10 @@ import './StepperPage.scss';
 /* took code from cdn of bootstrap and converted it into scss and put it in this file */
 import './bootstrap_min.scss'; 
 import './bootstrap_min.scss';
+// import { Router } from 'react-router-dom';
+import Router from "next/router";
 
-class StepperPage extends Component{
+class Thankyou extends Component{
     constructor(){
         super();
         this.state = {
@@ -38,7 +40,7 @@ class StepperPage extends Component{
                 <button 
                     style={{color: 'black', backgroundColor: 'white', borderRadius: '20px'}}
                     className="btn pr-5 pl-5 pt-1 pb-1"
-                    onClick={() => this.pageChanger(2)}
+                    onClick={() => this.pageChanger(3)}
                 >
                     Next
                 </button>
@@ -61,10 +63,19 @@ class StepperPage extends Component{
                     <br />
                     <div className="image-column">
                         <div className="logo-hold" style = {{textAlign: 'center'}}>
-                            <img className="appButton" src="../images/appstore.svg" alt="icon" />
-                            <img className="appButton" src="../images/googleplay.svg" alt="icon" />
+                            <img className="appButton" src="../../images/appstore.svg" alt="icon" />
+                            <img className="appButton" src="../../images/googleplay.svg" alt="icon" />
                         </div>
                     </div>
+                    <hr/>
+                    {/* <div className="d-flex justify-content-between mt-5">
+                    <button 
+                        style={{color: 'black', backgroundColor: 'white', borderRadius: '20px'}}
+                        className="btn pr-5 pl-5 pt-1 pb-1"
+                        onClick={() => this.pageChanger(1)}
+                    >
+                        Back
+                    </button>
                     <button 
                         style={{color: 'black', backgroundColor: 'white', borderRadius: '20px'}}
                         className="btn pr-5 pl-5 pt-1 pb-1"
@@ -72,6 +83,7 @@ class StepperPage extends Component{
                     >
                         Next
                     </button>
+                    </div> */}
                 </p>
             </div>
         );
@@ -96,13 +108,22 @@ class StepperPage extends Component{
                     <span> <a href="#" className="p-link">{`{via the My Account Page}`}</a> </span> where 
                     you can create a ticket. We will be happy to assit!
                 </p>
-                <button 
-                    style={{color: 'black', backgroundColor: 'white', borderRadius: '20px'}}
-                    className="btn pr-5 pl-5 pt-1 pb-1"
-                    onClick={() => this.pageChanger(1)}
-                >
-                    Next
-                </button>
+                <div className="d-flex justify-content-between mt-5">
+                    <button 
+                        style={{color: 'black', backgroundColor: 'white', borderRadius: '20px'}}
+                        className="btn pr-5 pl-5 pt-1 pb-1"
+                        onClick={() => this.pageChanger(1)}
+                    >
+                        Back
+                    </button>
+                    <button 
+                        style={{color: 'black', backgroundColor: 'white', borderRadius: '20px'}}
+                        className="btn pr-5 pl-5 pt-1 pb-1"
+                        onClick={() => Router.push("/myaccount")}
+                    >
+                        My Account
+                    </button>
+                    </div>
             </div>
         );
     }
@@ -152,7 +173,7 @@ class StepperPage extends Component{
             <div>
                 <div className="box row p-5 m-0">
                     <div className="col-sm box-left container">
-                        <img src="../images/assets-image.jpg" alt="Image Not Found" className="box-img" />                        
+                        <img src="../../images/assets-image.jpg" alt="Image Not Found" className="box-img" />                        
                     </div>
                     <div className="col-sm box-right">
                         <div className="navigation container-fluid d-flex justify-content-between">                            
@@ -163,17 +184,17 @@ class StepperPage extends Component{
                             >
                                 1
                             </button>                            
-                            <button 
+                            {/* <button 
                                 className={"nav-btn "+ (this.state.page2_active? 'bg-color-pink':'bg-color-gray') }
                                 id="nav-btn2" 
                                 onClick={()=>this.pageChanger(2)}>
                                 2
-                            </button>
+                            </button> */}
                             <button 
                                 className={"nav-btn "+ (this.state.page3_active? 'bg-color-pink':'bg-color-gray') }
                                 id="nav-btn3" 
                                 onClick={()=>this.pageChanger(3)}>
-                                3
+                                2
                             </button>   
                             <span className="nav-dash" id="nav-dash1"></span>                                                   
                         </div>
@@ -188,4 +209,4 @@ class StepperPage extends Component{
         );
     }
 }
-export default StepperPage;
+export default Thankyou;

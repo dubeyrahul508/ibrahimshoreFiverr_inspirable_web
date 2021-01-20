@@ -16,9 +16,14 @@ export class AuthToken {
     } catch (e) {}
   }
 
- static async storeToken (token){
-      Cookie.set(TOKEN_KEY, token);
-      await Router.push("/myaccount");
+ static async storeToken (token, authType){
+  Cookie.set(TOKEN_KEY, token);
+   if(authType==="login"){
+    await Router.push("/myaccount");
+   }
+   else{
+    await Router.push("/thankyou");
+   }
   }
 
   static async removeToken (){

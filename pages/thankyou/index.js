@@ -40,7 +40,7 @@ class Thankyou extends Component{
                 <button 
                     style={{color: 'black', backgroundColor: 'white', borderRadius: '20px'}}
                     className="btn pr-5 pl-5 pt-1 pb-1"
-                    onClick={() => this.pageChanger(3)}
+                    onClick={() => this.pageChanger(2)}
                 >
                     Next
                 </button>
@@ -61,14 +61,15 @@ class Thankyou extends Component{
                     Once you have downloaded the app, you can access your account using the email address
                     and password you used when signing up.                    
                     <br />
-                    <div className="image-column">
+                    {/* <div className="image-column">
                         <div className="logo-hold" style = {{textAlign: 'center'}}>
                             <img className="appButton" src="../../images/appstore.svg" alt="icon" />
                             <img className="appButton" src="../../images/googleplay.svg" alt="icon" />
                         </div>
-                    </div>
+                    </div> */}
+                    <p className="text-center mt-3" style={{color:"#F35590", fontSize:"1.5em"}}>Application Links, Comming soon...</p>
                     <hr/>
-                    {/* <div className="d-flex justify-content-between mt-5">
+                    <div className="d-flex justify-content-between mt-5">
                     <button 
                         style={{color: 'black', backgroundColor: 'white', borderRadius: '20px'}}
                         className="btn pr-5 pl-5 pt-1 pb-1"
@@ -83,7 +84,7 @@ class Thankyou extends Component{
                     >
                         Next
                     </button>
-                    </div> */}
+                    </div>
                 </p>
             </div>
         );
@@ -112,7 +113,7 @@ class Thankyou extends Component{
                     <button 
                         style={{color: 'black', backgroundColor: 'white', borderRadius: '20px'}}
                         className="btn pr-5 pl-5 pt-1 pb-1"
-                        onClick={() => this.pageChanger(1)}
+                        onClick={() => this.pageChanger(2)}
                     >
                         Back
                     </button>
@@ -184,12 +185,12 @@ class Thankyou extends Component{
                             >
                                 1
                             </button>                            
-                            {/* <button 
+                            <button 
                                 className={"nav-btn "+ (this.state.page2_active? 'bg-color-pink':'bg-color-gray') }
                                 id="nav-btn2" 
                                 onClick={()=>this.pageChanger(2)}>
                                 2
-                            </button> */}
+                            </button>
                             <button 
                                 className={"nav-btn "+ (this.state.page3_active? 'bg-color-pink':'bg-color-gray') }
                                 id="nav-btn3" 

@@ -6,6 +6,7 @@ import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
 import Router from "next/router";
 import ActiveLink from "./ActiveLink";
+import { validateEmail } from "../utils/emailHelpers";
 
 const Account = (props) => {
   const [forgotEmail,setForgotEmail]=useState("");
@@ -23,9 +24,10 @@ const Account = (props) => {
   const [signInLogin, setSignInLogin] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [message, setMessage] = useState("");
-
+const [emailValidation, setEmailValidation] = useState("Not Valid");
   //var signInLogin = 0;
-  var emailValidation = "Not Valid";
+  // var emailValidation = "Not Valid";
+  
   const context = useContext(AuthContext);
   var closeButton;
   useEffect(()=>{
@@ -67,14 +69,18 @@ const Account = (props) => {
     }
   };
 
-  const onBlurEmail = () => {
+  const onBlurEmail = async () => {
     const emailGot = email;
     const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    if (!re.test(emailGot) || emailGot === "") {
-      emailValidation = "Not Valid";
+    const isEmailValid = await validateEmail(email)
+    // !re.test(emailGot) || 
+    if (emailGot === "" || !isEmailValid) {
+      // emailValidation = "Not Valid";
+      setEmailValidation("Not Valid");
       return;
     } else {
-      emailValidation = "Valid";
+      // emailValidation = "Valid";
+      setEmailValidation("Valid");
     }
   };
 
@@ -150,7 +156,9 @@ const Account = (props) => {
       }, 5000);
     } else {
       const resac = await add_contact({
-        email: email,
+        firstName,
+        lastName,
+        email,
         listId: 7,
       });
       console.log(resac)

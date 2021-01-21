@@ -16,13 +16,44 @@ const properties = {
   },
 };
 
-export const add_contact = async ({email, listId}) => {
+export const add_contact = async ({email, firstName, lastName, listId}) => {
+  // try{
+  //   const addedContact = await fetch("https://inspirable.api-us1.com/api/3/contacts", {
+  //     "mode": "no-cors",
+  //     "method": "POST",
+  //     "headers": {
+  //       "Content-Type": "application/json",
+  //       // "Api-Token": "c71515ccfe669d47d995c474964d0b8deac37d5de5f08f4ad45650629aea5d6a42995a31"
+  //     },
+  //     body: JSON.stringify({email, firstName, lastName})
+  //   })
+  //   const content = await addedContact.json();
+  //   // const contactListUpdate = await fetch("https://inspirable.api-us1.com/api/3/contactLists", {
+  //   //   "method": "POST",
+  //   //   "headers": {
+  //   //     'Accept': 'application/json',
+  //   //     "Content-Type": "application/json",
+  //   //     "Api-Token": "c71515ccfe669d47d995c474964d0b8deac37d5de5f08f4ad45650629aea5d6a42995a31"
+  //   //   },
+  //   //   body: JSON.stringify({email, firstName, lastName})
+  //   // })
+  //   return content;
+  // }
+  // catch(error){
+  //   console.log(error,"hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh")
+  // }
+
+
+
+
   try {
     const data =await Object.entries({
       email: email,
+      first_name: firstName||"",
+      last_name: lastName||"",
       ["p[" + listId + "]"]: listId,
       api_key:
-        "d99045b437388b4965018ad16ed88df9690ff8a33c56a6468877500c0c5749f3a1ef8e9b",
+        "c71515ccfe669d47d995c474964d0b8deac37d5de5f08f4ad45650629aea5d6a42995a31",
     })
       .map(
         ([key, value]) =>

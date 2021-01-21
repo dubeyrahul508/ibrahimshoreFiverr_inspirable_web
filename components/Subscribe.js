@@ -18,6 +18,7 @@ const Subscribe = ({ isBlog = false }) => {
   let [email, setEmail] = useState("");
   let [verifyingEmail, setVerifyingEmail] = useState(false);
   let [emailValidationState, setEmailValidationState] = useState("");
+  const [showValidationErr, setShowValidationErr] = useState(false);
   let [submitting, setSubmitting] = useState(false);
   let [error, setError] = useState("default");
   const [res, apiMethod] = useFetchData({
@@ -31,7 +32,6 @@ const Subscribe = ({ isBlog = false }) => {
   });
 
   const onBlurEmail = async (e) => {
-    1;
     setEmailValidationState("");
     setVerifyingEmail(true);
 
@@ -43,7 +43,8 @@ const Subscribe = ({ isBlog = false }) => {
       return;
     }
 
-    const isEmailValid = validateEmail(email);
+    const isEmailValid = await validateEmail(email);
+    console.log(isEmailValid)
     if (!isEmailValid) {
       setEmailValidationState("Invalid email address");
       setVerifyingEmail(false);
@@ -69,14 +70,17 @@ const Subscribe = ({ isBlog = false }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setSubmitting(true);
-    axios
+    setShowValidationErr(false);
+    const isEmailValid = await validateEmail(email);
+    if(isEmailValid&&email.length){
+      axios
       .post(
         "https://cors-anywhere.herokuapp.com/https://inspirable.api-us1.com/api/3/contacts",
         { contact: { email } },
         {
           headers: {
             "Api-Token": process.env.INSPIRABLE_APP_ACTIVECAMPAIGN_KEY,
-            "Content-Type": "application/x-www-form-urlencoded",
+            "Content-Type": "application/json",
           },
         }
       )
@@ -90,9 +94,9 @@ const Subscribe = ({ isBlog = false }) => {
           listId: 8,
         });
         console.log(resac)
-        setTimeout(() => {
-          setError("default");
-        }, 5000);
+        // setTimeout(() => {
+        //   setError("default");
+        // }, 5000);
       })
       .catch(function (error) {
         console.log(error);
@@ -103,6 +107,11 @@ const Subscribe = ({ isBlog = false }) => {
         }, 5000);
         setEmail("");
       });
+    }
+    else{
+      setShowValidationErr(true)
+    }
+    
   };
 
   const renderContent = () => {
@@ -136,8 +145,9 @@ const Subscribe = ({ isBlog = false }) => {
                 value={email}
                 placeholder="Enter your email address"
                 onChange={(e) => setEmail(e.target.value)}
-                onBlur={onBlurEmail}
+                // onBlur={onBlurEmail}
               />
+              {showValidationErr&&<p style={{color:"red"}}>Please Enter a Valid Email address</p>}
               
               <input
                 type="submit"

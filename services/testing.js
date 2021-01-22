@@ -40,7 +40,7 @@ export const questionFormData = (data, file) => {
   }
   
   // Sending the json data
-  fetch("https://inspirablebooks.freshdesk.com/api/v2/tickets", {
+  fetch("https://cors-anywhere.herokuapp.com/https://inspirablebooks.freshdesk.com/api/v2/tickets", {
     method: "POST",
     headers: {   
       "Content-Type": "multipart/form-data",

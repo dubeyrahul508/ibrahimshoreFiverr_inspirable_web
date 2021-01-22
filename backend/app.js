@@ -21,7 +21,9 @@ const getAccess_token = () => {
     var config = {
     method: 'post',
     url: 'https://accounts.zoho.eu/oauth/v2/token',
+    "mode": "no-cors",
     headers: { 
+        
         'Content-Type': 'application/x-www-form-urlencoded', 
         'Cookie': 'd4bcc0a499=b68879031235cd68accefd96263120ab; iamcsr=c2c0d38a-8aed-4574-b4c9-433738d08380; _zcsr_tmp=c2c0d38a-8aed-4574-b4c9-433738d08380; stk=11eb313d97ecc60aa4f0b24ef06d95e0; JSESSIONID=CE91E2A9D7293DF6DBD5C0E30C3C335E'
     },
@@ -53,7 +55,9 @@ app.post('/', (req, res) => {
     var config = {
     method: 'post',
     url: 'https://desk.zoho.eu/api/v1/tickets?orgId=20073540860',
+    "mode": "no-cors",
     headers: { 
+        
         'Authorization': 'Bearer 1000.289471a87b086b6672c4cfc34064441d.a3e99501f8957337ef5e7195d1233bbd', 
         'Content-Type': 'application/json', 
         'Cookie': '4a1e652dc2=0b1a41a6f8bdf5bace124495c295acad; crmcsr=76625785-3407-476f-86b6-ba1c5fa6b3a7; _zcsr_tmp=76625785-3407-476f-86b6-ba1c5fa6b3a7; stk=11eb313d97ecc60aa4f0b24ef06d95e0; JSESSIONID=D6E580153FECF260014DCC4B1104970A'
@@ -75,8 +79,10 @@ app.post('/', (req, res) => {
     var options = { method: 'POST',
     url: 'https://desk.zoho.eu/api/v1/tickets/48240000000122527/attachments',
     qs: { orgId: '20073540860', isPublic: 'true' },
+    "mode": "no-cors",
     headers: 
-    { 'postman-token': '713d9056-0f8b-a347-e161-2474302b73a5',
+    { 
+        'postman-token': '713d9056-0f8b-a347-e161-2474302b73a5',
         'cache-control': 'no-cache',
         authorization: 'Bearer 1000.289471a87b086b6672c4cfc34064441d.a3e99501f8957337ef5e7195d1233bbd',
         'content-type': 'multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW' },

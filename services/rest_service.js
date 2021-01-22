@@ -91,7 +91,7 @@ export const postLogin = async (data) => {
       }
     );
     console.log("Access Token: " + res.data.access_token);
-    await AuthToken.storeToken(res.data.access_token);
+    await AuthToken.storeToken(res.data.access_token, 'login', res.data);
 
     return { code: "200", user: res.data.me };
   } catch (error) {
@@ -194,7 +194,8 @@ export const postRegister = async (data) => {
     );
     console.log(res);
     if (res.data && res.data.access_token) {
-      await AuthToken.storeToken(res.data.access_token);
+      console.log(res.data, 'hhhhhhohsdshdfkjshfkshfkushfkjhfskjdh')
+      await AuthToken.storeToken(res.data.access_token, 'register', res.data);
 
       return { code: "200" };
     }

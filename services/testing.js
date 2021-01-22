@@ -8,6 +8,7 @@ export const please = async () => {
       "https://desk.zoho.eu/api/v1/tickets?orgId=20073540860",
       {
         headers: {
+          "mode": "no-cors",
           Accept: "application/json",
           "Content-Type": "application/json",
           "Authorization": "Bearer 1000.2b7ee5ebd7200c56e479a6311f462e2d.885e76c55614531bb3368f434a080944"
@@ -22,7 +23,8 @@ export const please = async () => {
 
 const getAccessToken = () => {
   fetch("https://accounts.zoho.eu/oauth/v2/auth/refresh?response_type=token&client_id=1000.Z9VA0AE0BZ84EPEIC1Q8QLL4C1G2IO&scope=Desk.tickets.ALL,Desk.tasks.ALL,Desk.basic.READ,Desk.settings.ALL,Desk.contacts.READ,Desk.contacts.CREATE&redirect_uri=http://localhost:3000/redirect", {
-    redirect: "follow"
+    "mode": "no-cors",  
+  redirect: "follow"
   })
   .then(
     response => response.json()
@@ -33,32 +35,25 @@ const getAccessToken = () => {
 export const questionFormData = (data, file) => {
   const formData = new FormData();
   formData.append("file", file);
+  for(const name in data) {
+    formData.append(name, data[name]);
+  }
   
   // Sending the json data
-  fetch("https://desk.zoho.eu/api/v1/tickets?orgId=20073540860", {
+  fetch("https://inspirablebooks.freshdesk.com/api/v2/tickets", {
     method: "POST",
-    headers: {
-      Accept: "application/json",
-      "Content-Type": "application/json",
-      "Authorization": "Bearer " + token
+    headers: {   
+      "Content-Type": "multipart/form-data",
+      "Authorization": "Basic " + process.env.FRESHDESK_APP_APIKEY
     },
-    body: JSON.stringify(data)
+    body: formData
   })
-  .then(response => response.json())
-  .then( result => {
-      //sending the attachment separately because we can't do both in 1 req
-      setTimeout(function() {
-        fetch("https://desk.zoho.eu/api/v1/tickets/"+result.id+"/attachments?orgId=20073540860&isPublic=true", {
-          method: "POST",
-          headers: {
-            "Authorization": "Bearer " + token
-          },
-          body: formData
-        }).then(console.log("done"))
-      }, 1000);
-    })
-  .catch(error => console.log('error', error),
-    getAccessToken()
+  .then(response => console.log(response))
+  // .then( result => {
+  //     console.log(result, 'adhfjnskdjnajifisjksjgbdjsbkgdfjhg')
+  //   })
+  .catch(error => console.log('error akdshfdj', error),
+    // getAccessToken()
   );
 }
 

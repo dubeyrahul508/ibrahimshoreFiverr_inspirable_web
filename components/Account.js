@@ -40,7 +40,7 @@ const [emailValidation, setEmailValidation] = useState("Not Valid");
   },[]);
   setTimeout(function() {
     closeButton = document.getElementsByClassName("close-button")[0];
-    closeButton.style.display = 'none';
+    // closeButton.style.display = 'none';
   }, 300);
 
   const validationErrorStyles = {
@@ -181,8 +181,8 @@ const [emailValidation, setEmailValidation] = useState("Not Valid");
     }
   };
 
-  const nextLoginClicked = () => {
-    onBlurEmail();
+  const nextLoginClicked = async() => {
+    await onBlurEmail();
     console.log("validation State: " + emailValidation);
     if(emailValidation === "Valid") {
       setSignInLogin(true);
@@ -450,7 +450,6 @@ const [emailValidation, setEmailValidation] = useState("Not Valid");
                         <input
                             id="email"
                             onChange={(e) => setEmail(e.target.value)}
-                            type="text"
                             /* onKeyUp={(e) => onKeyUp(e.target.value, e.target.id, "login")} */
                             required
                             type="email"

@@ -40,18 +40,30 @@ export const questionFormData = (data, file) => {
   }
   
   // Sending the json data
-  fetch("https://cors-anywhere.herokuapp.com/https://inspirablebooks.freshdesk.com/api/v2/tickets", {
-    method: "POST",
-    headers: {   
-      "Content-Type": "multipart/form-data",
-      "Authorization": "Basic " + process.env.FRESHDESK_APP_APIKEY
-    },
-    body: formData
-  })
-  .then(response => console.log(response))
+  // fetch("https://cors-anywhere.herokuapp.com/https://inspirablebooks.freshdesk.com/api/v2/tickets", {
+  //   method: "POST",
+  //   headers: {   
+  //     "Content-Type": "multipart/form-data",
+  //     "Authorization": "Basic " + process.env.FRESHDESK_APP_APIKEY
+  //   },
+  //   body: formData
+  // })
+  // .then(response => console.log(response))
   // .then( result => {
   //     console.log(result, 'adhfjnskdjnajifisjksjgbdjsbkgdfjhg')
   //   })
+  fetch("https://inspirable.atlassian.net/rest/servicedeskapi/servicedesk/INS/queue",{
+    method: "GET",
+    headers: {
+      "Content-Type": "application/json",
+      "Authorization": "Basic "+"aW5mb0BpbnNwaXJhYmxlLmlvOlBMQXpuM0lmTW5zdnZBbnZMQVpqRTBGRQ=="
+    }
+  }).then(response=>{
+    return response.json()
+  })
+  .then(result=>{
+    console.log(result, 'adhfjnskdjnajifisjksjgbdjsbkgdfjhg')
+  })
   .catch(error => console.log('error akdshfdj', error),
     // getAccessToken()
   );

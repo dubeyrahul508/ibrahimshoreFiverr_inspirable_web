@@ -11,6 +11,9 @@ module.exports = withSass({
         INSPIRABLE_APP_AC_ENDOPINT : 'https://inspirable.api-us1.com',
         INSPIRABLE_APP_DEBOUNCE_APIKEY :"6002ed047aa9f",
         INSPIRABLE_APP_DEBOUNCE_VALID_REASONS :"Deliverable,Accept All,Unknown",
-        FRESHDESK_APP_APIKEY: "TFRTRzJmOU9wamxrdWViMUl2QlQ6WA=="
+        FRESHDESK_APP_APIKEY: "TFRTRzJmOU9wamxrdWViMUl2QlQ6WA==",
+        ATLASSIAN_APP_TOKEN: "PLAzn3IfMnsvvAnvLAZjE0FE",
+        ATLASSIAN_APP_ORGANISATION_ID: "cbja086a-19a0-1159-7j44-4456cbc8d9ca",
+        ATLASSIAN_APP_APIKEY: "6yQYsxgg6uDwkq07muEG"
     }
 })

@@ -15,5 +15,13 @@ module.exports = withSass({
         ATLASSIAN_APP_TOKEN: "PLAzn3IfMnsvvAnvLAZjE0FE",
         ATLASSIAN_APP_ORGANISATION_ID: "cbja086a-19a0-1159-7j44-4456cbc8d9ca",
         ATLASSIAN_APP_APIKEY: "6yQYsxgg6uDwkq07muEG"
+    },
+    rewrites: async()=>{
+        return [
+            {
+              source: '/rest/:slug*',
+              destination: `https://inspirable.atlassian.net/rest/:slug*`,
+            },
+          ]
     }
 })

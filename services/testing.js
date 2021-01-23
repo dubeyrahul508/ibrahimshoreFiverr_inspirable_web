@@ -52,12 +52,13 @@ export const questionFormData = (data, file) => {
   // .then( result => {
   //     console.log(result, 'adhfjnskdjnajifisjksjgbdjsbkgdfjhg')
   //   })
-  fetch("https://inspirable.atlassian.net/rest/servicedeskapi/servicedesk/INS/queue",{
+  fetch("https://cors-anywhere.herokuapp.com/https://inspirable.atlassian.net/rest/servicedeskapi/servicedesk/INS/queue",{
     method: "GET",
     headers: {
       "Content-Type": "application/json",
       "Authorization": "Basic "+"aW5mb0BpbnNwaXJhYmxlLmlvOlBMQXpuM0lmTW5zdnZBbnZMQVpqRTBGRQ=="
-    }
+    },
+    redirect: 'follow'
   }).then(response=>{
     return response.json()
   })

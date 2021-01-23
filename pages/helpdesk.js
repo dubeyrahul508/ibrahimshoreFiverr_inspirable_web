@@ -41,13 +41,14 @@ const HelpDesk = () => {
           button="Search FAQs"
           buttonClickNewLink = "/faq"
         />
-        <HelpDeskBox
+        {/* <HelpDeskBox
           text="Ask a Question"
           icon="help_outline"
           info="Send us a message and we'll get back to you"
           button="Ask a Question"
           buttonClickNewLink = "/askaquestion"
-        />
+        /> */}
+        <p className="helpDeskBox"><strong>Ask a Question</strong> - Comming Soon </p>
       </div>
 
       <div className="questions-container">
